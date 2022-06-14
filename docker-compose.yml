@@ -1,0 +1,15 @@
+version: '1.0'
+
+services:
+
+  devops-app:
+    container_name: challenge-devops1
+    
+    build:     
+        context: .
+        dockerfile: Dockerfile
+    
+    ports:
+      - 8000:8000/tcp
+
+    network_mode: host
